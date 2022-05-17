@@ -6,10 +6,15 @@
   </head>
   <body>
     <script type="text/javascript">
-      
+
+    function keisan() {
+      var element1 =document.getElementsByClassName('int1')
+      var element2 =document.getElementsByClassName('int2')
+      alert(element1.value);
+    }
     </script>
-    <input type="text" name="" value="">
-    <input type="text" name="" value="">
-    <button type="button" name="button">計算</button>
+    <input id="int1" type="text" name="" value="">
+    <input id="int2" type="text" name="" value="">
+    <button onclick="keisan()"" type="button" name="button">計算</button>
   </body>
 </html>
