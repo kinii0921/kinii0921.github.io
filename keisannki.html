@@ -8,9 +8,13 @@
     <script type="text/javascript">
 
     function keisan() {
-      var element1 =document.getElementsByClassName('int1')
-      var element2 =document.getElementsByClassName('int2')
-      alert(element1.value);
+      var element1 =document.getElementByid('int1')
+      var element2 =document.getElementByid('int2')
+
+      var result = parsInt(element1.value) +parsInt(element2.value)
+
+
+      alert(result.value);
     }
     </script>
     <input id="int1" type="text" name="" value="">
